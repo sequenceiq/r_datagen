@@ -10,8 +10,9 @@ y<-c(rnorm(n1,mean=-122.44503,sd=dev))
 #datetime
 start<-as.POSIXct(strptime("2014/01/01", "%Y/%m/%d"))
 end<-as.POSIXct(strptime("2014/02/28", "%Y/%m/%d"))
-dt=end-start
+dt<-end-start
 dd<-dt/2
+h<-dd/24
 t<-c(start+rnorm(80*multiplier)*h+dd/2, start+rnorm(100*multiplier)*h+dd, start+rnorm(70*multiplier)*h+dd*1.5)
 
 #application feature
