@@ -1,4 +1,4 @@
-multiplier<-1
+multiplier<-1000
 
 #Sunnyside, 6h, 12h and 18h clusters, #250000
 
@@ -23,7 +23,7 @@ f<- sample(1:3, n1*multiplier, replace=T)
 u<- sample(1:10000, n1*multiplier, replace=T)
 
 #event id generation
-e<- sample(1:300*250*multiplier, n1*multiplier, replace=F)
+e<- sample(1:300*250*multiplier, n1*multiplier, replace=T)
 
 #create CSV file
 test <- data.frame(x,y,t,f,u,e)
